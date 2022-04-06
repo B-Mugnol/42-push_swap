@@ -6,7 +6,7 @@
 #    By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/06 01:35:58 by bmugnol-          #+#    #+#              #
-#    Updated: 2022/04/06 02:38:25 by bmugnol-         ###   ########.fr        #
+#    Updated: 2022/04/06 20:53:08 by bmugnol-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,13 +24,13 @@ RM		:=	rm -rf
 
 # PUSH_SWAP
 # Headers
-HEADER_DIR	:=	inc
-HEADER		:=	push_swap.h
+HEADER_DIR	:=	inc	src/operation
+HEADER		:=	push_swap.h operation.h
 H_INCLUDE	:=	$(addprefix -I, $(HEADER_DIR))
 
 # Source
-SRC_DIR		:=	src
-SRC			:=	push_swap.c
+SRC_DIR		:=	src	src/operation
+SRC			:=	push_swap.c swap.c
 
 # Object
 OBJ_DIR		:=	obj
