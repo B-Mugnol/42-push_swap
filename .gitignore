@@ -7,7 +7,7 @@
 !inc
 !inc/*.h
 
-# Source ('ft_' preffix)
+# Source
 !src
 !src/**
 !src/**.c
