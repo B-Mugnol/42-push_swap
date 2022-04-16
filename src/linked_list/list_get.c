@@ -6,7 +6,7 @@
 /*   By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 20:08:24 by bmugnol-          #+#    #+#             */
-/*   Updated: 2022/04/16 20:55:16 by bmugnol-         ###   ########.fr       */
+/*   Updated: 2022/04/16 21:56:05 by bmugnol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,15 @@ t_int_list	*find(t_int_list *lst, int (*compare_fn)(int, int), int test_param)
 		lst = lst->next;
 	}
 	return (NULL);
+}
+
+t_int_list	*get_second_to_last_node(t_int_list *lst)
+{
+	if (!lst || !lst->next)
+		return (lst);
+	while (lst->next->next)
+		lst = lst->next;
+	return (lst);
 }
 
 t_int_list	*get_last_node(t_int_list *lst)
