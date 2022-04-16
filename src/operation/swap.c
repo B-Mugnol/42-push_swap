@@ -6,7 +6,7 @@
 /*   By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 20:44:12 by bmugnol-          #+#    #+#             */
-/*   Updated: 2022/04/16 20:27:16 by bmugnol-         ###   ########.fr       */
+/*   Updated: 2022/04/16 21:42:21 by bmugnol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	swap_b(t_stack_pair *stacks)
 	ft_printf("sb\n");
 }
 
-void	swap_both(t_stack_pair *stacks)
+void	swap_all(t_stack_pair *stacks)
 {
 	swap_first_nodes(stacks->stack_a);
 	swap_first_nodes(stacks->stack_b);
