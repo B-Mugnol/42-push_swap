@@ -6,7 +6,7 @@
 /*   By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 20:40:18 by bmugnol-          #+#    #+#             */
-/*   Updated: 2022/04/16 21:42:10 by bmugnol-         ###   ########.fr       */
+/*   Updated: 2022/04/16 22:03:57 by bmugnol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,10 @@ void	push_to_b(t_stack_pair *stacks);
 void	rotate_a(t_stack_pair *stacks);
 void	rotate_b(t_stack_pair *stacks);
 void	rotate_all(t_stack_pair *stacks);
+
+// reverse_rotate.c
+void	reverse_rotate_a(t_stack_pair *stacks);
+void	reverse_rotate_b(t_stack_pair *stacks);
+void	reverse_rotate_all(t_stack_pair *stacks);
 
 #endif
