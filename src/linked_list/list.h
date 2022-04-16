@@ -6,7 +6,7 @@
 /*   By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 19:26:46 by bmugnol-          #+#    #+#             */
-/*   Updated: 2022/04/14 21:14:26 by bmugnol-         ###   ########.fr       */
+/*   Updated: 2022/04/16 20:51:15 by bmugnol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void		append_list_to_node(t_int_list **lst, t_int_list *new);
 void		append_node_to_list(t_int_list **lst, t_int_list *new);
 
 // list_get.c
+t_int_list	*find(t_int_list *lst, int (*compare_fn)(int, int), int test_param);
 t_int_list	*get_last_node(t_int_list *lst);
 int			get_list_size(t_int_list *lst);
 
