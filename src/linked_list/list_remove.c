@@ -6,7 +6,7 @@
 /*   By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 19:55:10 by bmugnol-          #+#    #+#             */
-/*   Updated: 2022/04/14 21:14:10 by bmugnol-         ###   ########.fr       */
+/*   Updated: 2022/04/16 21:31:16 by bmugnol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	list_clear(t_int_list **lst, void (*del)(int))
 {
 	t_int_list	*acc;
 
-	if (!*lst || !del)
+	if (!lst || !*lst || !del)
 		return ;
 	while (*lst)
 	{
