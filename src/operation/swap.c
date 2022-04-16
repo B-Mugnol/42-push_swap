@@ -6,7 +6,7 @@
 /*   By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 20:44:12 by bmugnol-          #+#    #+#             */
-/*   Updated: 2022/04/16 20:14:28 by bmugnol-         ###   ########.fr       */
+/*   Updated: 2022/04/16 20:27:16 by bmugnol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 static void	swap_first_nodes(t_int_list **lst);
 
-void	swap_a(t_stacks *stacks)
+void	swap_a(t_stack_pair *stacks)
 {
 	swap_first_nodes(stacks->stack_a);
 	ft_printf("sa\n");
 }
 
-void	swap_b(t_stacks *stacks)
+void	swap_b(t_stack_pair *stacks)
 {
 	swap_first_nodes(stacks->stack_b);
 	ft_printf("sb\n");
 }
 
-void	swap_both(t_stacks *stacks)
+void	swap_both(t_stack_pair *stacks)
 {
 	swap_first_nodes(stacks->stack_a);
 	swap_first_nodes(stacks->stack_b);
