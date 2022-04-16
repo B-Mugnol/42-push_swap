@@ -6,7 +6,7 @@
 /*   By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 21:44:27 by bmugnol-          #+#    #+#             */
-/*   Updated: 2022/04/16 22:05:05 by bmugnol-         ###   ########.fr       */
+/*   Updated: 2022/04/16 22:07:09 by bmugnol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ void	reverse_rotate_all(t_stack_pair *stacks)
 
 static void	reverse_rotate(t_int_list **lst)
 {
-	t_int_list *second_to_last;
-	t_int_list *last;
+	t_int_list	*second_to_last;
+	t_int_list	*last;
 
 	if (!lst || !*lst)
 		return ;
