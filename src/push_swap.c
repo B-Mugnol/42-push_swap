@@ -6,22 +6,25 @@
 /*   By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 20:40:16 by bmugnol-          #+#    #+#             */
-/*   Updated: 2022/04/22 03:24:40 by bmugnol-         ###   ########.fr       */
+/*   Updated: 2022/06/02 20:39:37 by bmugnol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void	print_list(t_int_list *lst);
-static void	print_stacks(t_stack_pair stacks);
+static void	print_list(t_int_list *lst);//
+static void	print_stacks(t_stack_pair stacks);//
 t_int_list	*to_linked_list(int argc, char **argv);
 static int	is_digit_str(const char *str);
+static int	is_equal(int a, int b);
+# include <stdio.h>
 
 int	main(int argc, char **argv)
 {
 	t_int_list		*stack_a;
 	t_int_list		*stack_b;
 	t_stack_pair	stacks;
+	int				exit_status;
 
 	if (argc == 1)
 		return (EXIT_SUCCESS);
@@ -32,20 +35,20 @@ int	main(int argc, char **argv)
 		ft_putstr_fd("Error\n", 2);
 		return (EXIT_FAILURE);
 	}
-	stacks = (t_stack_pair){.stack_a = &stack_a, .stack_b = &stack_b,
-		.node_count = argc - 1};
+	stacks = (t_stack_pair){.stack_a = &stack_a, .stack_b = &stack_b};
+	exit_status = algorithm_handler(&stacks, argc - 1);
 	// printf("%i, %i\n", stacks.node_count, get_list_size(*stacks.stack_a));
-	print_stacks(stacks);
-	reverse_rotate_all(&stacks);
-	// rotate_a(&stacks);
-	// rotate_b(&stacks);
-	// swap_both(&stacks);
-	// push_to_a(&stacks);
-	// push_to_b(&stacks);
-	print_stacks(stacks);
+	// print_stacks(stacks);
+		// reverse_rotate_all(&stacks);
+		// rotate_a(&stacks);
+		// rotate_b(&stacks);
+		// swap_both(&stacks);
+		// push_to_a(&stacks);
+		// push_to_b(&stacks);
+	// print_stacks(stacks);
 	list_clear(stacks.stack_a, NULL);
 	list_clear(stacks.stack_b, NULL);
-	return (EXIT_SUCCESS);
+	return (exit_status);
 }
 
 t_int_list	*to_linked_list(int argc, char **argv)
