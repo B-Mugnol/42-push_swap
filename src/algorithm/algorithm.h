@@ -1,24 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   struct.h                                           :+:      :+:    :+:   */
+/*   algorithm.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/16 20:07:18 by bmugnol-          #+#    #+#             */
-/*   Updated: 2022/04/28 00:16:03 by bmugnol-         ###   ########.fr       */
+/*   Created: 2022/04/28 00:00:56 by bmugnol-          #+#    #+#             */
+/*   Updated: 2022/06/02 20:07:07 by bmugnol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STRUCT_H
-# define STRUCT_H
+#ifndef ALGORITHM_H
+# define ALGORITHM_H
 
-# include "list.h"
+# include "struct.h"
+# include "operation.h"
 
-typedef struct s_stack_pair
-{
-	t_int_list	**stack_a;
-	t_int_list	**stack_b;
-}	t_stack_pair;
+int	algorithm_handler(t_stack_pair *stacks, int node_count);
 
 #endif

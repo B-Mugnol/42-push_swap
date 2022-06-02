@@ -6,7 +6,7 @@
 #    By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/06 01:35:58 by bmugnol-          #+#    #+#              #
-#    Updated: 2022/04/20 18:54:05 by bmugnol-         ###   ########.fr        #
+#    Updated: 2022/06/02 20:08:39 by bmugnol-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,18 +24,19 @@ RM		:=	rm -rf
 
 # PUSH_SWAP
 # Headers
-HEADER_DIR	:=	inc	src/operation src/linked_list
-HEADER		:=	push_swap.h struct.h operation.h list.h
+HEADER_DIR	:=	inc		src/algorithm		src/linked_list		src/operation
+HEADER		:=	push_swap.h		struct.h	\
+				algorithm.h					\
+				list.h						\
+				operation.h
 H_INCLUDE	:=	$(addprefix -I, $(HEADER_DIR))
 
 # SOURCE
-SRC_DIR		:=	src	src/operation src/linked_list
-# root
-SRC			:=	push_swap.c
-# linked_list
-SRC			+=	list_add.c 	list_get.c	list_remove.c
-# operation
-SRC			+=	push.c rotate.c reverse_rotate.c swap.c
+SRC_DIR		:=	src 	src/algorithm		src/linked_list		src/operation
+SRC			:=	push_swap.c									\
+				algorithm.c									\
+				list_add.c 	list_get.c	list_remove.c		\
+				push.c rotate.c reverse_rotate.c swap.c
 
 # Object
 OBJ_DIR		:=	obj
