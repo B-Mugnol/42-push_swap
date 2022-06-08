@@ -6,7 +6,7 @@
 #    By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/06 01:35:58 by bmugnol-          #+#    #+#              #
-#    Updated: 2022/06/02 20:08:39 by bmugnol-         ###   ########.fr        #
+#    Updated: 2022/06/06 19:29:34 by bmugnol-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ H_INCLUDE	:=	$(addprefix -I, $(HEADER_DIR))
 # SOURCE
 SRC_DIR		:=	src 	src/algorithm		src/linked_list		src/operation
 SRC			:=	push_swap.c									\
-				algorithm.c									\
+				algorithm.c		aux.c	sort_low.c			\
 				list_add.c 	list_get.c	list_remove.c		\
 				push.c rotate.c reverse_rotate.c swap.c
 
