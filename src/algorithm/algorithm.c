@@ -6,7 +6,7 @@
 /*   By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 00:11:36 by bmugnol-          #+#    #+#             */
-/*   Updated: 2022/06/09 02:12:25 by bmugnol-         ###   ########.fr       */
+/*   Updated: 2022/06/09 20:44:55 by bmugnol-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 int	algorithm_handler(t_stack_pair *stacks, int node_count)
 {
-	int	min;
-	int	max;
-
 	if (node_count <= 0)
 		return (EXIT_FAILURE);
 	if (is_ordered(*stacks->stack_a) == 1)
