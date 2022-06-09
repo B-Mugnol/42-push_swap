@@ -6,7 +6,7 @@
 #    By: bmugnol- <bmugnol-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/06 01:35:58 by bmugnol-          #+#    #+#              #
-#    Updated: 2022/06/09 05:03:52 by bmugnol-         ###   ########.fr        #
+#    Updated: 2022/06/09 20:44:24 by bmugnol-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ NAME	:=	push_swap
 # C Compiler
 CC		:=	gcc
 # Compiler flags
-CFLAGS	:=	#-Wall -Wextra -Werror
+CFLAGS	:=	-Wall -Wextra -Werror
 # Removal tool
 RM		:=	rm -rf
 
